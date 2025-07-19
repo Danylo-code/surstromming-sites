@@ -1,0 +1,116 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f7fa;
+  margin: 0;
+  color: #333;
+}
+
+header {
+  background-color: #000;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 3em;
+}
+
+header p {
+  margin-top: 10px;
+  font-size: 1.4em;
+}
+
+header .history {
+  max-width: 800px;
+  margin: 30px auto 0;
+  font-size: 1em;
+  line-height: 1.7;
+  color: #ccc;
+}
+
+/* Контейнер з товарами */
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+/* Товар */
+.product {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.product:hover {
+  transform: translateY(-5px);
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.product h3 {
+  margin-top: 0;
+  font-size: 1.2em;
+  color: #003844;
+}
+
+.product p {
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+/* Футер */
+footer {
+  background-color: #000;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.95em;
+}
+
+/* Адаптивність для мобільних */
+@media (max-width: 480px) {
+  header {
+    padding: 40px 15px;
+  }
+  header h1 {
+    font-size: 2em; /* трохи менше, але не дуже */
+  }
+  header p {
+    font-size: 1.1em;
+  }
+  header .history {
+    font-size: 0.9em;
+    margin: 20px 10px 0;
+  }
+  .container {
+    padding: 20px 10px;
+    gap: 20px;
+  }
+  .product {
+    padding: 15px;
+  }
+  .product h3 {
+    font-size: 1.1em;
+  }
+  .product p {
+    font-size: 0.95em;
+  }
+  footer {
+    font-size: 0.85em;
+    padding: 15px 10px;
+  }
+}
